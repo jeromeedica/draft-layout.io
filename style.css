@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home-ctr{
+    background: url('https://www.wallpaperimageshd.com/uploads/2020/03/10/black-abstract-background-1680x1050.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: min(100%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.home-ctr h1{
+    text-transform: uppercase;
+    line-height: 0.8;
+    font-size: 2rem;
+    color: indianred
+}
+.home-ctr h1 span{
+    color: whitesmoke;
+    padding: 15px;
+}
+p{
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 40px;
+}
+
+a{
+    color: white;
+    background: rgb(44, 40, 40);
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in;
+    text-transform: capitalize;
+}
+
+a:hover{
+   background:rgb(216, 27, 27);
+}
+.about-ctr{
+    height: 75vh;
+    width: 100%;
+    background: indianred;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.about-ctr .split{
+    height: 50vh;
+    width: 100%;
+    border: 0px solid rgb(216, 27, 27);
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.split .left-side{
+    background: #131313;
+    height: 50vh;
+    width: 70%;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    
+}
+
+.left-side h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.split .right-side{
+    height: 50vh;
+    width: 30%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.right-side img{
+    border: opx solid red;
+    height: auto;
+    width: 90%;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+    
+   
+    .about-ctr{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-ctr .split{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .split .right-side{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .right-side img{
+        height: 299px;
+        width: 80%;
+        padding: 0px;
+        border-radius: 10px;
+        
+    
+    }
+
+    .split .left-side{
+        height: 50vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
